@@ -7,27 +7,14 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - machine: a6osx
-            os: macos-latest
-          - machine: ta6osx
-            os: macos-latest
-            parallel: 1
-          - machine: i3le
-            os: ubuntu-latest
-          - machine: ti3le
-            os: ubuntu-latest
-          - machine: a6le
-            os: ubuntu-latest
-          - machine: ta6le
-            os: ubuntu-latest
           - machine: i3nt
-            os: windows-latest
+            os: windows-2022
           - machine: ti3nt
-            os: windows-latest
+            os: windows-2022
           - machine: a6nt
-            os: windows-latest
+            os: windows-2022
           - machine: ta6nt
-            os: windows-latest
+            os: windows-2022
     runs-on: ${{ matrix.config.os }}
     env:
       TARGET_MACHINE: ${{ matrix.config.machine }}
