@@ -2242,3 +2242,5 @@
 - fix bug in printf with certain control strings and argument counts
     s/format.ss mats/format.ms mats/root-experr-compile-{0,2}-fff
     release_notes/release_notes.stex
+- added support for Microsoft Visual Studio 2022 on Windows
+    BUILDING, c/vs.bat, wininstall/locate-vcredist.bat
